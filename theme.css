@@ -125,7 +125,7 @@ input[type="radio"] {
   background-color: var(--bg-primary);
 }
 
-/* Rem search results – No results */
+/* Rem search results – No results */
 .search-results__no-results {
   color: var(--content-primary);
 }
@@ -155,11 +155,21 @@ input[type="radio"] {
   background-color: var(--accent);
 }
 
+.rn-button:not(disabled),
+.rn-add-button {
+  transition: 150ms;
+  color: var(--content-primary);
+}
+
+.focus-within\:rn-clr-border-selected:focus-within {
+  border-color: var(--accent);
+}
+
 @media (hover: hover) and (pointer: fine) {
   .rn-button:hover,
   .rn-add-button:hover,
   .hover\:rn-clr-background-accent--hovered:hover {
-    background: rgba(189, 147, 249, 0.9) !important;
+    background: rgba(189, 147, 249, 0.75) !important;
   }
 
   .rn-date-header-item:hover {
